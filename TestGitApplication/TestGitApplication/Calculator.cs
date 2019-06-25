@@ -10,7 +10,9 @@ namespace TestGitApplication
     interface ICalculator
     {        
         int Sum(int a, int b);
-	int Multiply(int a, int b);
+	    int Multiply(int a, int b);
+
+        int Divide(int a, int b);
     }
 
     class Calculator : ICalculator
@@ -23,6 +25,11 @@ namespace TestGitApplication
         public int Multiply(int a, int b)
         {
             return a*b;
+        }
+
+        public int Divide(int a, int b)
+        {
+            return a / b;
         }
     }
 }
